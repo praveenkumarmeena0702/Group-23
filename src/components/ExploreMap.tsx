@@ -21,7 +21,7 @@ function createPinIcon(price: number) {
 
 export function ExploreMap({ locations }: ExploreMapProps) {
   const center = useMemo<[number, number]>(() => {
-    if (locations.length === 0) return [19.04, 72.84];
+    if (locations.length === 0) return [26.83, 80.97];
     const avgLat = locations.reduce((sum, l) => sum + l.lat, 0) / locations.length;
     const avgLng = locations.reduce((sum, l) => sum + l.lng, 0) / locations.length;
     return [avgLat, avgLng];

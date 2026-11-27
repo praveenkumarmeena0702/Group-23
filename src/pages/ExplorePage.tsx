@@ -316,7 +316,7 @@ export function ExplorePage() {
       <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
         <div className="mb-8">
           <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#3B82F6]">
-            Mumbai Network
+            Lucknow Network
           </p>
           <h1 className="mt-2 font-heading text-[32px] font-semibold tracking-tight text-[#171717] sm:text-[40px]">
             Explore verified parking

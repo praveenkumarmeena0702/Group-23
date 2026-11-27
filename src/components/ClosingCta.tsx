@@ -17,8 +17,8 @@ export function ClosingCta() {
                 Reserve your next bay before you start the engine.
               </h2>
               <p className="mt-3 text-[15px] leading-relaxed text-white/70">
-                Browse live Mumbai availability across Bandra, BKC, Marine Drive, and Lower Parel
-                with zero booking fees.
+                Browse live Lucknow availability across Palassio Mall, Lulu Mall, IIIT Lucknow, and
+                Hazratganj with zero booking fees.
               </p>
             </div>
             <Button asChild variant="white" size="lg" className="shrink-0">

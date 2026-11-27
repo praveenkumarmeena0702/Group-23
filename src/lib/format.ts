@@ -64,7 +64,7 @@ export function formatVehiclePlate(raw: string): string {
   return raw.toUpperCase().replace(/[^A-Z0-9\s-]/g, '').slice(0, 15);
 }
 
-/** Validate Indian vehicle registration number (e.g. MH 02 AB 1234 or MH02AB1234). */
+/** Validate Indian vehicle registration number (e.g. UP 32 AB 1234 or UP32AB1234). */
 export function isValidVehiclePlate(plate: string): boolean {
   const compact = plate.replace(/[\s-]/g, '').toUpperCase();
   return /^[A-Z]{2}[0-9]{1,2}[A-Z]{0,3}[0-9]{3,4}$/.test(compact);

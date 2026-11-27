@@ -15,10 +15,10 @@ import type {
 } from '@/types';
 
 const STORAGE_KEYS = {
-  LOCATIONS: 'parkease_locations_v1',
-  SLOTS: 'parkease_slots_v1',
+  LOCATIONS: 'parkease_locations_v2',
+  SLOTS: 'parkease_slots_v2',
   BOOKINGS: 'parkease_bookings_v1',
-  REVIEWS: 'parkease_reviews_v1',
+  REVIEWS: 'parkease_reviews_v2',
   USERS: 'parkease_users_v1',
   SESSION: 'parkease_session_v1',
   PENDING_OTPS: 'parkease_pending_otps_v1',

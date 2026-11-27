@@ -148,7 +148,7 @@ export function BookingFlowPage() {
       return false;
     }
     if (!isValidVehiclePlate(vehicleNumber)) {
-      setVehicleError('Enter a valid plate number (e.g. MH 02 AB 1234).');
+      setVehicleError('Enter a valid plate number (e.g. UP 32 AB 1234).');
       return false;
     }
     setVehicleError('');
@@ -539,7 +539,7 @@ export function BookingFlowPage() {
                     setVehicleNumber(formatVehiclePlate(e.target.value));
                     if (vehicleError) setVehicleError('');
                   }}
-                  placeholder="MH 02 AB 1234"
+                  placeholder="UP 32 AB 1234"
                   className="mt-2 h-12 w-full rounded-[14px] border border-[#E9EDF2] px-4 font-mono text-base font-medium uppercase tracking-wider text-[#171717] placeholder:font-sans placeholder:tracking-normal placeholder:text-[#737373]/70 focus:border-[#3B82F6] focus:outline-none"
                 />
                 {vehicleError && (
