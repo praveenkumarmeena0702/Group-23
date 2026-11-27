@@ -16,7 +16,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#737373]">
-              Real-time parking discovery and exact bay reservation across verified Mumbai
+              Real-time parking discovery and exact bay reservation across verified Lucknow
               facilities. Calm arrival, every trip.
             </p>
           </div>
@@ -29,22 +29,22 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm text-[#737373]">
               <li>
                 <Link to="/explore" className="transition-colors hover:text-[#171717]">
-                  All Mumbai garages
+                  All Lucknow garages
                 </Link>
               </li>
               <li>
-                <Link to="/explore?q=Bandra" className="transition-colors hover:text-[#171717]">
-                  Bandra West & BKC
+                <Link to="/explore?q=Palassio" className="transition-colors hover:text-[#171717]">
+                  Phoenix Palassio Mall
                 </Link>
               </li>
               <li>
-                <Link to="/explore?q=Marine+Drive" className="transition-colors hover:text-[#171717]">
-                  South Mumbai & Colaba
+                <Link to="/explore?q=Lulu+Mall" className="transition-colors hover:text-[#171717]">
+                  Lulu Mall & Golf City
                 </Link>
               </li>
               <li>
-                <Link to="/explore?q=Andheri" className="transition-colors hover:text-[#171717]">
-                  Andheri & Powai
+                <Link to="/explore?q=IIIT+Lucknow" className="transition-colors hover:text-[#171717]">
+                  IIIT Lucknow & CG City
                 </Link>
               </li>
             </ul>
@@ -114,7 +114,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-[#E9EDF2] pt-6 text-xs text-[#737373] sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} ParkEase Mobility Pvt. Ltd. All rights reserved.</p>
-          <p>Mumbai · Verified bays · Instant digital pass</p>
+          <p>Lucknow · Verified bays · Instant digital pass</p>
         </div>
       </div>
     </footer>

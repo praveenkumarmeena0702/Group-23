@@ -233,7 +233,7 @@ export function RegisterPage() {
   return (
     <AuthLayout
       title="Create your account"
-      subtitle="Reserve parking bays in seconds and access instant digital passes across Mumbai."
+      subtitle="Reserve parking bays in seconds and access instant digital passes across Lucknow."
     >
       <form onSubmit={handleRegisterSubmit} noValidate className="space-y-4">
         <div>

@@ -1,58 +1,58 @@
--- ParkEase Seed Data (10 Mumbai locations, 240 slots, 30 reviews)
+-- ParkEase Seed Data (10 Lucknow locations, 240 slots, 30 reviews)
 
 insert into public.parking_locations (
   id, name, area, city, address, description, images, price_per_hour, rating, review_count,
   total_slots, available_slots, parking_type, facilities, operating_hours, distance_km, popularity, featured, lat, lng
 ) values
-  ('skyline-parking-hub', 'Skyline Parking Hub', 'Bandra West', 'Mumbai', '14th Road, Linking Road Junction, Bandra West, Mumbai 400050',
-   'A sunlit multi-level concrete garage steps from Linking Road boutiques and Bandra cafés. Features wide turning radii, license-plate entry cameras, and dedicated fast-charge EV bays on Row A.',
+  ('palassio-mall-parking', 'Phoenix Palassio Mall Parking', 'Gomti Nagar Extension', 'Lucknow', 'Amar Shaheed Path, Sector 7, Gomti Nagar Extension, Lucknow 226010',
+   'Multi-level smart garage serving Phoenix Palassio Mall with wide turning radii, license-plate entry cameras, and dedicated fast-charge EV bays on Row A right off Shaheed Path.',
    array['/images/hero-garage.jpg','/images/garage-ramp.jpg','/images/garage-entrance.jpg','/images/tower-basement.jpg'],
-   120, 4.9, 3, 24, 21, 'Multi-level', array['CCTV','EV charging','Security','24/7','Covered'], '24 hours', 1.1, 98, true, 19.0626, 72.8336),
+   60, 4.9, 3, 24, 21, 'Multi-level', array['CCTV','EV charging','Security','24/7','Covered'], '24 hours', 1.1, 99, true, 26.8091, 81.0125),
 
-  ('marine-drive-covered', 'Marine Drive Covered Parking', 'Marine Drive', 'Mumbai', 'Netaji Subhash Chandra Bose Road, Churchgate, Mumbai 400020',
-   'Weather-protected bay facility just off the Queen’s Necklace promenade. Ideal for evening walks, Nariman Point meetings, and South Mumbai dining without circling narrow heritage lanes.',
-   array['/images/garage-entrance.jpg','/images/hero-garage.jpg','/images/coastal-open.jpg','/images/street-plaza.jpg'],
-   140, 4.8, 3, 24, 20, 'Covered', array['CCTV','Security','Valet','Covered'], '6:00 AM – 11:30 PM', 0.8, 95, true, 18.9432, 72.8235),
-
-  ('bandra-curve-garage', 'Bandra Curve Garage', 'Bandra West', 'Mumbai', 'Pali Hill Access Lane, Bandra West, Mumbai 400050',
-   'Architectural curved-ramp deck built for smooth entry and quick exits toward Carter Road and Hill Road. Bright LED guidance keeps every bay crisp day and night.',
-   array['/images/garage-ramp.jpg','/images/hero-garage.jpg','/images/street-plaza.jpg','/images/garage-entrance.jpg'],
-   100, 4.7, 3, 24, 22, 'Multi-level', array['CCTV','EV charging','Covered','24/7'], '24 hours', 1.4, 91, true, 19.0596, 72.8266),
-
-  ('bkc-smart-park', 'BKC Smart Park', 'BKC', 'Mumbai', 'G Block, Bandra Kurla Complex, Mumbai 400051',
-   'Flagship commercial tower basement with contactless pass scanning, valet handover at the granite plaza, and high-clearance bays for executive sedans and SUVs.',
+  ('lulu-mall-parking', 'Lulu Mall Multi-Level Parking', 'Sushant Golf City', 'Lucknow', 'Amar Shaheed Path, Sushant Golf City, Lucknow 226030',
+   'High-capacity covered parking deck adjacent to Lulu Mall Lucknow. Features bright LED row guidance, contactless pass scanning, and direct lift access to the mall atrium.',
    array['/images/tower-basement.jpg','/images/street-plaza.jpg','/images/hero-garage.jpg','/images/garage-ramp.jpg'],
-   180, 4.9, 3, 24, 20, 'Basement', array['CCTV','EV charging','Security','Valet','24/7','Covered'], '24 hours', 0.6, 99, true, 19.0653, 72.8681),
+   50, 4.9, 3, 24, 20, 'Multi-level', array['CCTV','EV charging','Security','Valet','24/7','Covered'], '24 hours', 1.4, 98, true, 26.7834, 80.9901),
 
-  ('lower-parel-tower', 'Lower Parel Tower Parking', 'Lower Parel', 'Mumbai', 'Senapati Bapat Marg, Lower Parel, Mumbai 400013',
-   'Clean two-level corporate basement minutes from High Street Phoenix and Worli business towers. Guarded 24/7 with zero-wait express exit lanes.',
+  ('iiit-lucknow-parking', 'IIIT Lucknow College Parking', 'Chak Ganjaria', 'Lucknow', 'Chak Ganjaria, C.G. City, Sultanpur Road, Lucknow 226002',
+   'Verified campus-side covered and shaded bays near IIIT Lucknow College in C.G. City. Ideal for students, visiting faculty, and tech event attendees along Sultanpur Road.',
+   array['/images/garage-entrance.jpg','/images/coastal-open.jpg','/images/street-plaza.jpg','/images/hero-garage.jpg'],
+   30, 4.8, 3, 24, 22, 'Covered', array['CCTV','EV charging','Security','24/7','Covered'], '24 hours', 0.8, 96, true, 26.8007, 81.0241),
+
+  ('hazratganj-central-garage', 'Hazratganj Central Garage', 'Hazratganj', 'Lucknow', 'Mahatma Gandhi Marg, Near Janpath Market, Hazratganj, Lucknow 226001',
+   'Weather-protected basement and plaza facility steps from Janpath Market and Hazratganj heritage arcades. Skip street congestion with pre-booked bays and optional valet handover.',
    array['/images/street-plaza.jpg','/images/tower-basement.jpg','/images/hero-garage.jpg','/images/garage-entrance.jpg'],
-   150, 4.8, 3, 24, 21, 'Basement', array['CCTV','Security','Valet','24/7','Covered'], '24 hours', 1.9, 93, true, 18.9977, 72.8287),
+   70, 4.8, 3, 24, 20, 'Basement', array['CCTV','Security','Valet','Covered'], '6:00 AM – 11:30 PM', 0.6, 95, true, 26.8489, 80.9462),
 
-  ('andheri-metro-park', 'Andheri Metro Park', 'Andheri East', 'Mumbai', 'Western Express Highway Service Road, Andheri East, Mumbai 400069',
-   'Value park-and-ride covered structure connected directly to the Metro Line 1 concourse. Designed for daily commuters and airport travellers seeking safe overnight bays.',
-   array['/images/garage-entrance.jpg','/images/tower-basement.jpg','/images/garage-ramp.jpg','/images/hero-garage.jpg'],
-   60, 4.5, 3, 24, 22, 'Covered', array['CCTV','Security','24/7','Covered'], '24 hours', 0.4, 88, true, 19.1197, 72.8464),
+  ('gomti-nagar-summit-park', 'Gomti Nagar Summit Park', 'Gomti Nagar', 'Lucknow', 'Vibhuti Khand, Near Summit Building, Gomti Nagar, Lucknow 226010',
+   'Modern corporate basement minutes from Vibhuti Khand business towers, cafés, and Wave Mall. Guarded 24/7 with zero-wait express exit lanes and EV charging.',
+   array['/images/garage-ramp.jpg','/images/tower-basement.jpg','/images/hero-garage.jpg','/images/street-plaza.jpg'],
+   60, 4.7, 3, 24, 21, 'Basement', array['CCTV','EV charging','Security','Valet','24/7','Covered'], '24 hours', 1.9, 92, true, 26.8624, 81.0077),
 
-  ('powai-lake-parking', 'Powai Lake Parking', 'Powai', 'Mumbai', 'Central Avenue, Hiranandani Gardens, Powai, Mumbai 400076',
-   'Open-air paved lot bordered by shaded avenues along Hiranandani Gardens. Spacious bays make weekend brunch and lakeside visits effortless.',
+  ('ekana-stadium-park', 'Ekana Stadium Smart Park', 'Gomti Nagar Extension', 'Lucknow', 'Sector 7, Amar Shaheed Path, Near Ekana Cricket Stadium, Lucknow 226010',
+   'Spacious multi-level deck built for smooth match-day arrivals and quick exits onto Shaheed Path. Clear row signage and floodlit walkways keep every bay effortless.',
+   array['/images/garage-ramp.jpg','/images/hero-garage.jpg','/images/garage-entrance.jpg','/images/street-plaza.jpg'],
+   55, 4.7, 3, 24, 22, 'Multi-level', array['CCTV','Security','24/7','Covered'], '24 hours', 1.3, 90, true, 26.8116, 81.0172),
+
+  ('janeshwar-mishra-parking', 'Janeshwar Mishra Park Lot', 'Gomti Nagar', 'Lucknow', 'Gate 4, Gomti Nagar Extension Bypass, Lucknow 226010',
+   'Open-air paved lot bordered by shaded avenues beside Janeshwar Mishra Park. Wide marked bays make morning walks, family picnics, and weekend visits effortless.',
    array['/images/coastal-open.jpg','/images/street-plaza.jpg','/images/garage-entrance.jpg','/images/hero-garage.jpg'],
-   70, 4.4, 3, 24, 21, 'Open', array['CCTV','Security'], '6:00 AM – 11:00 PM', 2.8, 82, false, 19.1176, 72.906),
+   40, 4.6, 3, 24, 21, 'Open', array['CCTV','Security','EV charging'], '5:30 AM – 11:00 PM', 2.4, 87, false, 26.8371, 80.9924),
 
-  ('colaba-heritage-garage', 'Colaba Heritage Garage', 'Colaba', 'Mumbai', 'Shahid Bhagat Singh Road, Apollo Bandar, Colaba, Mumbai 400001',
-   'Discreet covered parking tucked behind historic Colaba Causeway facades. Eliminates street-parking stress near Gateway of India and Kala Ghoda galleries.',
+  ('charbagh-station-parking', 'Charbagh Metro & Rail Hub', 'Charbagh', 'Lucknow', 'Station Road, Near Charbagh Metro Station, Lucknow 226004',
+   'Value park-and-ride covered structure connected to Charbagh Metro and Lucknow Junction railway terminal. Designed for daily commuters and intercity travellers.',
+   array['/images/garage-entrance.jpg','/images/tower-basement.jpg','/images/garage-ramp.jpg','/images/hero-garage.jpg'],
+   40, 4.5, 3, 24, 22, 'Covered', array['CCTV','Security','24/7','Covered'], '24 hours', 2.8, 85, false, 26.8317, 80.9209),
+
+  ('alambagh-transit-garage', 'Alambagh Transit Garage', 'Alambagh', 'Lucknow', 'Kanpur Road, Near Alambagh Bus Terminal, Lucknow 226005',
+   'Clean covered parking along Kanpur Road steps from Alambagh Metro and ISBT terminal. Reliable 24/7 security and wide bays for family SUVs and airport transfers.',
    array['/images/hero-garage.jpg','/images/garage-entrance.jpg','/images/street-plaza.jpg','/images/tower-basement.jpg'],
-   130, 4.6, 3, 24, 20, 'Covered', array['CCTV','Security','Valet','Covered'], '7:00 AM – 11:30 PM', 1.6, 89, false, 18.9219, 72.8315),
+   45, 4.5, 3, 24, 20, 'Covered', array['CCTV','Security','24/7','Covered'], '24 hours', 3.5, 83, false, 26.8124, 80.9036),
 
-  ('juhu-beach-parking', 'Juhu Beach Parking', 'Juhu', 'Mumbai', 'Juhu Tara Road, Near JW Marriott, Juhu, Mumbai 400049',
-   'Well-lit coastal open lot two minutes from the Juhu shoreline. Marked wide bays accommodate family SUVs and two-wheelers cleanly.',
-   array['/images/coastal-open.jpg','/images/garage-entrance.jpg','/images/street-plaza.jpg','/images/garage-ramp.jpg'],
-   80, 4.5, 3, 24, 21, 'Open', array['CCTV','Security','EV charging'], '5:30 AM – 11:30 PM', 3.2, 85, false, 19.0988, 72.8264),
-
-  ('dadar-station-parking', 'Dadar Station Parking', 'Dadar', 'Mumbai', 'Dr. Babasaheb Ambedkar Road, Dadar East, Mumbai 400014',
-   'Multi-level commuter hub close to Dadar railway terminal and Worli connector. Fast ramp circulation, 24/7 CCTV coverage, and clear row signage.',
-   array['/images/garage-ramp.jpg','/images/tower-basement.jpg','/images/garage-entrance.jpg','/images/hero-garage.jpg'],
-   65, 4.4, 3, 24, 22, 'Multi-level', array['CCTV','Security','24/7','Covered'], '24 hours', 4.2, 80, false, 19.0178, 72.8478)
+  ('aminabad-heritage-parking', 'Aminabad Heritage Parking', 'Aminabad', 'Lucknow', 'Latouche Road, Near Pratap Market, Aminabad, Lucknow 226018',
+   'Discreet multi-level parking tucked just off bustling Aminabad markets. Eliminates narrow-lane parking stress near Tunday Kababi and Chowk heritage bazaars.',
+   array['/images/street-plaza.jpg','/images/garage-ramp.jpg','/images/garage-entrance.jpg','/images/hero-garage.jpg'],
+   50, 4.4, 3, 24, 21, 'Multi-level', array['CCTV','Security','Covered'], '7:00 AM – 11:30 PM', 3.1, 81, false, 26.8467, 80.9277)
 on conflict (id) do nothing;
 
 -- Generate 24 slots (A01..D06) per location
@@ -65,16 +65,16 @@ declare
   stype public.slot_type;
   sstatus public.slot_status;
   occ_map jsonb := '{
-    "skyline-parking-hub": ["A03","B02","C05"],
-    "marine-drive-covered": ["A02","B04","C01","D03"],
-    "bandra-curve-garage": ["B05","D02"],
-    "bkc-smart-park": ["A04","B01","C03","D05"],
-    "lower-parel-tower": ["A05","C02","D04"],
-    "andheri-metro-park": ["B03","C06"],
-    "powai-lake-parking": ["A02","C04","D01"],
-    "colaba-heritage-garage": ["A04","B02","C05","D06"],
-    "juhu-beach-parking": ["B01","C03","D04"],
-    "dadar-station-parking": ["A06","D02"]
+    "palassio-mall-parking": ["A03","B02","C05"],
+    "lulu-mall-parking": ["A02","B04","C01","D03"],
+    "iiit-lucknow-parking": ["B05","D02"],
+    "hazratganj-central-garage": ["A04","B01","C03","D05"],
+    "gomti-nagar-summit-park": ["A05","C02","D04"],
+    "ekana-stadium-park": ["B03","C06"],
+    "janeshwar-mishra-parking": ["A02","C04","D01"],
+    "charbagh-station-parking": ["A06","D02"],
+    "alambagh-transit-garage": ["A04","B02","C05","D06"],
+    "aminabad-heritage-parking": ["B01","C03","D04"]
   }'::jsonb;
 begin
   for loc_rec in select id from public.parking_locations loop
@@ -100,33 +100,33 @@ end $$;
 
 -- Seed 30 reviews (3 per location)
 insert into public.reviews (location_id, user_name, rating, comment, date_label) values
-  ('skyline-parking-hub', 'Aarav', 5, 'Spotless garage right off Linking Road. Selected A01 near the EV charger and drove straight in.', '18 Nov 2026'),
-  ('skyline-parking-hub', 'Diya', 5, 'Super bright lighting and friendly security staff. Way calmer than hunting for street space in Bandra.', '11 Nov 2026'),
-  ('skyline-parking-hub', 'Rohan', 5, 'Wide bays even for an SUV. QR pass scan at the boom barrier took two seconds.', '3 Nov 2026'),
-  ('marine-drive-covered', 'Ananya', 5, 'Saved us twenty minutes on a Sunday evening. Literally steps from the promenade.', '20 Nov 2026'),
-  ('marine-drive-covered', 'Kabir', 5, 'Covered bays keep the car cool even in humid afternoon heat. Transparent pricing.', '12 Nov 2026'),
-  ('marine-drive-covered', 'Meera', 4, 'Very neat facility and quick valet option when we were running late for dinner.', '29 Oct 2026'),
-  ('bandra-curve-garage', 'Vikram', 5, 'Smooth curved ramp with zero blind corners. Loved picking bay B03 beforehand.', '19 Nov 2026'),
-  ('bandra-curve-garage', 'Ishita', 5, 'Clean floors and great EV charging availability on Row A.', '8 Nov 2026'),
-  ('bandra-curve-garage', 'Siddharth', 4, 'Easy access from Pali Hill. Exit lane onto the main road is quick.', '1 Nov 2026'),
-  ('bkc-smart-park', 'Kavya', 5, 'Best corporate parking in BKC. Granite drop-off and instant pass verification.', '21 Nov 2026'),
-  ('bkc-smart-park', 'Arjun', 5, 'Worth every rupee before client meetings. Never have to circle G Block anymore.', '15 Nov 2026'),
-  ('bkc-smart-park', 'Nisha', 5, 'Immaculate basement and attentive guards. EV bay worked flawlessly.', '6 Nov 2026'),
-  ('lower-parel-tower', 'Dev', 5, 'Five-minute walk to Phoenix Palladium without the weekend mall traffic jam.', '17 Nov 2026'),
-  ('lower-parel-tower', 'Priya', 5, 'Clear signage inside the basement and wide bays for large sedans.', '9 Nov 2026'),
-  ('lower-parel-tower', 'Karan', 4, 'Reliable 24/7 security. Extending my booking time before arrival was effortless.', '2 Nov 2026'),
-  ('andheri-metro-park', 'Nikhil', 5, 'At ₹60/hr right next to the Metro, this is unbeatable for daily work commutes.', '19 Nov 2026'),
-  ('andheri-metro-park', 'Tanvi', 4, 'Well covered and safe even when returning late at night.', '10 Nov 2026'),
-  ('andheri-metro-park', 'Aditya', 5, 'No chaos at the gate, pass code accepted immediately.', '4 Nov 2026'),
-  ('powai-lake-parking', 'Sneha', 4, 'Peaceful open lot with wide spacing. Great for Sunday morning coffee walks.', '16 Nov 2026'),
-  ('powai-lake-parking', 'Rahul', 5, 'Always know which bay is open before leaving home.', '7 Nov 2026'),
-  ('powai-lake-parking', 'Pooja', 4, 'Clean paving and helpful attendant at the entrance.', '28 Oct 2026'),
-  ('colaba-heritage-garage', 'Zoya', 5, 'Parking in Colaba used to be a nightmare. This covered garage is a lifesaver.', '18 Nov 2026'),
-  ('colaba-heritage-garage', 'Manav', 4, 'Shaded, secure, and right near Kala Ghoda art galleries.', '11 Nov 2026'),
-  ('colaba-heritage-garage', 'Riya', 5, 'Quick check-in and fair hourly billing.', '30 Oct 2026'),
-  ('juhu-beach-parking', 'Vivaan', 5, 'Bright floodlights in the evening and clear bay markings right off Juhu Tara Road.', '20 Nov 2026'),
-  ('juhu-beach-parking', 'Sana', 4, 'Convenient EV charger spot and zero hassle finding our car later.', '13 Nov 2026'),
-  ('juhu-beach-parking', 'Omkar', 5, 'Plenty of room for our SUV, fair rate for Juhu.', '5 Nov 2026'),
-  ('dadar-station-parking', 'Harsh', 4, 'Practical, budget-friendly multi-level deck near Dadar terminal.', '14 Nov 2026'),
-  ('dadar-station-parking', 'Neha', 5, '24-hour access and clear row markers made early-morning train pickup stress-free.', '8 Nov 2026'),
-  ('dadar-station-parking', 'Yash', 4, 'Good security presence and fast entry with the ParkEase code.', '27 Oct 2026');
+  ('palassio-mall-parking', 'Aarav', 5, 'Spotless garage right off Shaheed Path. Selected A01 near the EV charger and walked straight into Palassio Mall.', '18 Nov 2026'),
+  ('palassio-mall-parking', 'Diya', 5, 'Super bright lighting and friendly security staff. Way calmer than weekend mall queues.', '11 Nov 2026'),
+  ('palassio-mall-parking', 'Rohan', 5, 'Wide bays even for an SUV. QR pass scan at the boom barrier took two seconds.', '3 Nov 2026'),
+  ('lulu-mall-parking', 'Ananya', 5, 'Saved us twenty minutes on a Sunday evening at Lulu Mall. Direct elevator access to the food court.', '20 Nov 2026'),
+  ('lulu-mall-parking', 'Kabir', 5, 'Covered bays keep the car cool even in warm Lucknow afternoons. Transparent pricing.', '12 Nov 2026'),
+  ('lulu-mall-parking', 'Meera', 4, 'Very neat facility and quick valet option when we arrived for dinner.', '29 Oct 2026'),
+  ('iiit-lucknow-parking', 'Vikram', 5, 'Super convenient right outside IIIT Lucknow College in CG City. Loved picking bay B03 beforehand.', '19 Nov 2026'),
+  ('iiit-lucknow-parking', 'Ishita', 5, 'Clean shaded bays and reliable EV charging availability on Row A during tech fest.', '8 Nov 2026'),
+  ('iiit-lucknow-parking', 'Siddharth', 4, 'Easy access from Sultanpur Road and affordable hourly rate for full-day campus visits.', '1 Nov 2026'),
+  ('hazratganj-central-garage', 'Kavya', 5, 'Best parking in Hazratganj. Just steps from Janpath Market with instant pass verification.', '21 Nov 2026'),
+  ('hazratganj-central-garage', 'Arjun', 5, 'Worth every rupee during evening shopping. Never have to circle MG Marg anymore.', '15 Nov 2026'),
+  ('hazratganj-central-garage', 'Nisha', 4, 'Immaculate basement and attentive guards. Valet handover was smooth.', '6 Nov 2026'),
+  ('gomti-nagar-summit-park', 'Dev', 5, 'Two-minute walk to Summit Building in Vibhuti Khand without evening traffic stress.', '17 Nov 2026'),
+  ('gomti-nagar-summit-park', 'Priya', 5, 'Clear signage inside the basement and wide bays for large sedans.', '9 Nov 2026'),
+  ('gomti-nagar-summit-park', 'Karan', 4, 'Reliable 24/7 security. Extending my booking time before arrival was effortless.', '2 Nov 2026'),
+  ('ekana-stadium-park', 'Nikhil', 5, 'Smooth entry on match evenings near Ekana Stadium and easy exit back onto Shaheed Path.', '19 Nov 2026'),
+  ('ekana-stadium-park', 'Tanvi', 4, 'Well lit and safe even when leaving late after night matches.', '10 Nov 2026'),
+  ('ekana-stadium-park', 'Aditya', 5, 'No chaos at the gate, ParkEase pass code accepted immediately.', '4 Nov 2026'),
+  ('janeshwar-mishra-parking', 'Sneha', 4, 'Peaceful open lot right by Gate 4. Great for early morning walks in Janeshwar Mishra Park.', '16 Nov 2026'),
+  ('janeshwar-mishra-parking', 'Rahul', 5, 'Always know which bay is open before leaving home.', '7 Nov 2026'),
+  ('janeshwar-mishra-parking', 'Pooja', 4, 'Clean paving and helpful attendant at the entrance.', '28 Oct 2026'),
+  ('charbagh-station-parking', 'Harsh', 4, 'Practical, budget-friendly covered deck right next to Charbagh Metro and station.', '14 Nov 2026'),
+  ('charbagh-station-parking', 'Neha', 5, '24-hour access and clear row markers made early-morning train pickup stress-free.', '8 Nov 2026'),
+  ('charbagh-station-parking', 'Yash', 4, 'Good security presence and fast entry with the ParkEase code.', '27 Oct 2026'),
+  ('alambagh-transit-garage', 'Vivaan', 5, 'Bright floodlights and clear bay markings right off Kanpur Road.', '20 Nov 2026'),
+  ('alambagh-transit-garage', 'Sana', 4, 'Very handy for catching early morning buses from Alambagh terminal.', '13 Nov 2026'),
+  ('alambagh-transit-garage', 'Omkar', 5, 'Plenty of room for our SUV and fair hourly rate.', '5 Nov 2026'),
+  ('aminabad-heritage-parking', 'Zoya', 5, 'Parking in Aminabad used to be a nightmare. This covered deck is a lifesaver.', '18 Nov 2026'),
+  ('aminabad-heritage-parking', 'Manav', 4, 'Shaded, secure, and an easy walk to Pratap Market and Tunday Kababi.', '11 Nov 2026'),
+  ('aminabad-heritage-parking', 'Riya', 4, 'Quick check-in and fair hourly billing.', '30 Oct 2026');

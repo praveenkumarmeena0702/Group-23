@@ -120,7 +120,7 @@ export function MyBookingsPage() {
           </h2>
           <p className="mt-1.5 max-w-sm text-sm text-[#737373]">
             {tab === 'all'
-              ? 'Reserve a Mumbai parking bay in seconds and your digital passes will appear here.'
+              ? 'Reserve a Lucknow parking bay in seconds and your digital passes will appear here.'
               : `You have no ${tab} reservations right now.`}
           </p>
           <Button asChild className="mt-6">

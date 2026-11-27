@@ -16,7 +16,7 @@ const VALUES = [
   {
     icon: Wind,
     title: 'Fewer circling cars',
-    copy: 'Knowing your exact bay beforehand cuts unnecessary lane-cruising, reducing congestion and idle emissions across Mumbai.',
+    copy: 'Knowing your exact bay beforehand cuts unnecessary lane-cruising, reducing congestion and idle emissions across Lucknow.',
   },
   {
     icon: Handshake,
@@ -41,14 +41,15 @@ export function AboutPage() {
         <Reveal delay={0.08}>
           <div className="mt-10 grid grid-cols-1 gap-8 text-[15.5px] leading-relaxed text-[#737373] md:grid-cols-2">
             <p>
-              Across dense neighbourhoods from Bandra West to Marine Drive, drivers spend up to
-              twenty minutes every trip hunting for an open spot. Meanwhile, structured garages a
-              block away often sit partially empty simply because nobody can see what is free inside.
+              Across busy hubs from Hazratganj to Gomti Nagar Extension, drivers spend up to twenty
+              minutes every trip hunting for an open spot. Meanwhile, structured garages near
+              Palassio Mall or Lulu Mall often sit partially empty simply because nobody can see what
+              is free inside.
             </p>
             <p>
               ParkEase bridges that gap with real-time bay inventory, exact row selection, and
-              instant digital passes. Whether you need an EV charger in BKC for two hours or a safe
-              overnight bay near Andheri Metro, you arrive knowing your space is already waiting.
+              instant digital passes. Whether you need an EV charger near IIIT Lucknow for two hours
+              or a safe bay at Charbagh Metro, you arrive knowing your space is already waiting.
             </p>
           </div>
         </Reveal>

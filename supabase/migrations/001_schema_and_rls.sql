@@ -21,7 +21,7 @@ create table if not exists public.parking_locations (
   id text primary key,
   name text not null,
   area text not null,
-  city text not null default 'Mumbai',
+  city text not null default 'Lucknow',
   address text not null,
   description text not null,
   images text[] not null default '{}',

@@ -26,12 +26,12 @@ import { ClosingCta } from '@/components/ClosingCta';
 import type { ParkingLocation } from '@/types';
 
 const SUGGESTED_AREAS = [
-  'Bandra West',
-  'BKC',
-  'Marine Drive',
-  'Lower Parel',
-  'Andheri East',
-  'Colaba',
+  'Palassio Mall',
+  'Lulu Mall',
+  'IIIT Lucknow',
+  'Hazratganj',
+  'Gomti Nagar',
+  'Charbagh',
 ];
 
 const HOW_IT_WORKS = [
@@ -39,7 +39,7 @@ const HOW_IT_WORKS = [
     step: '01',
     icon: Search,
     title: 'Search your area',
-    copy: 'Enter where and when you are heading across Mumbai to see live open bays.',
+    copy: 'Enter where and when you are heading across Lucknow to see live open bays.',
   },
   {
     step: '02',
@@ -90,7 +90,7 @@ const BENEFITS = [
 
 const STATS = [
   { value: '240+', label: 'Managed bays' },
-  { value: '10', label: 'Mumbai locations' },
+  { value: '10', label: 'Lucknow locations' },
   { value: '4.9', label: 'Average rating' },
   { value: '24/7', label: 'Driver support' },
 ];
@@ -99,21 +99,21 @@ const TESTIMONIALS = [
   {
     initials: 'RM',
     name: 'Rhea Malhotra',
-    role: 'Architect, Bandra West',
+    role: 'Architect, Gomti Nagar',
     quote:
-      'Picking my exact bay near Linking Road before leaving home completely removed the fifteen-minute circling ritual.',
+      'Picking my exact bay near Palassio Mall before leaving home completely removed the fifteen-minute weekend circling ritual.',
   },
   {
     initials: 'AK',
     name: 'Aditya Kulkarni',
-    role: 'Product Lead, BKC',
+    role: 'Software Engineer, IIIT Lucknow',
     quote:
-      'Clean, fast, and reliable. I book Row A EV bays at BKC Smart Park every Tuesday and Thursday morning.',
+      'Clean, fast, and reliable. I book Row A EV bays at IIIT Lucknow College Parking whenever I visit C.G. City for events.',
   },
   {
     initials: 'NS',
     name: 'Nandini Shah',
-    role: 'Gallery Curator, Colaba',
+    role: 'Retail Owner, Hazratganj',
     quote:
       'Transparent hourly rates with zero surprise surcharges at the gate. The pass QR opens cleanly even offline.',
   },
@@ -181,7 +181,7 @@ export function LandingPage() {
 
             <Reveal delay={0.12}>
               <p className="mt-5 max-w-2xl text-[15.5px] leading-relaxed text-[#737373]">
-                Browse verified covered, basement, and EV-ready parking across Mumbai. Choose your
+                Browse verified covered, basement, and EV-ready parking across Lucknow. Choose your
                 exact bay on the floor map and drive straight in with an instant digital pass.
               </p>
             </Reveal>
@@ -210,7 +210,7 @@ export function LandingPage() {
                         onFocus={() => setShowSuggestions(true)}
                         onBlur={() => setTimeout(() => setShowSuggestions(false), 160)}
                         onChange={(e) => setQuery(e.target.value)}
-                        placeholder="Bandra, BKC, Marine Drive..."
+                        placeholder="Palassio Mall, Lulu Mall, IIIT Lucknow..."
                         className="w-full bg-transparent text-sm font-medium text-[#171717] placeholder:text-[#737373]/70 focus:outline-none"
                       />
                     </div>
@@ -334,7 +334,7 @@ export function LandingPage() {
                 Popular locations
               </p>
               <h2 className="mt-2 font-heading text-[28px] font-semibold tracking-tight text-[#171717] sm:text-[32px]">
-                High-demand Mumbai garages
+                High-demand Lucknow garages
               </h2>
             </div>
             <Link
@@ -450,7 +450,7 @@ export function LandingPage() {
             Driver notes
           </p>
           <h2 className="mt-2 font-heading text-[28px] font-semibold tracking-tight text-[#171717] sm:text-[32px]">
-            Trusted by daily Mumbai drivers
+            Trusted by daily Lucknow drivers
           </h2>
         </Reveal>
 
